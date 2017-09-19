@@ -1,0 +1,266 @@
+@font-face {
+  font-family: icons;
+  src: url(../fonts/ElegantIcons.woff); }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  min-width: 100%;
+  height: 550px; }
+  .carousel-container img {
+    width: 100%;
+    height: auto;
+    min-width: 1400px;
+    min-height: 550px; }
+  .carousel-container h2 {
+    margin: 0;
+    color: white;
+    position: absolute;
+    z-index: 1000;
+    top: 180px;
+    left: 140px;
+    font-size: 1.8em;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white; }
+  .carousel-container i {
+    font-family: icons;
+    font-style: normal;
+    color: white;
+    cursor: pointer; }
+  .carousel-container .carousel-text {
+    color: white;
+    position: absolute;
+    z-index: 1000;
+    top: 260px;
+    left: 140px;
+    font-size: 0.8em; }
+  .carousel-container .carousel-button {
+    position: absolute;
+    z-index: 1000;
+    font-size: 0.9em;
+    top: 330px;
+    left: 140px;
+    color: white;
+    background-color: #e94739;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    padding: 8px 24px;
+    letter-spacing: 2px;
+    cursor: pointer; }
+  .carousel-container .carousel-button:hover {
+    background-color: #196089; }
+  .carousel-container .carousel-left-button {
+    font-size: 3em;
+    position: absolute;
+    z-index: 1000;
+    top: 225px;
+    left: 15px; }
+  .carousel-container .carousel-left-button:hover {
+    color: black; }
+  .carousel-container .carousel-right-button {
+    font-size: 3em;
+    position: absolute;
+    z-index: 1000;
+    top: 225px;
+    right: 15px; }
+  .carousel-container .carousel-right-button:hover {
+    color: black; }
+  .carousel-container .carousel-circles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1000;
+    bottom: 20px; }
+    .carousel-container .carousel-circles li {
+      width: 15px;
+      height: 15px;
+      overflow: hidden;
+      display: inline-block;
+      margin: 3px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      cursor: pointer; }
+    .carousel-container .carousel-circles .active {
+      background-color: white; }
+
+header {
+  padding: 0% 10%;
+  width: 100%;
+  z-index: 2000;
+  position: absolute;
+  top: 25px; }
+
+.dropdown-menu {
+  display: flex;
+  justify-content: flex-end; }
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px; }
+
+.dropdown:hover .dropbtn {
+  border-bottom: 2px solid white; }
+
+.dropdown {
+  display: block; }
+
+.dropdown-content {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  display: none;
+  background-color: white; }
+  .dropdown-content .row {
+    width: 250px;
+    padding: 15px; }
+  .dropdown-content h2 {
+    padding-bottom: 8px;
+    border-bottom: 1px solid; }
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  justify-content: center; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 40px 20px;
+  width: 100%; }
+  footer .col-1 {
+    color: white;
+    width: calc(100%/3);
+    max-width: 400px;
+    padding: 7px; }
+    footer .col-1 p {
+      font-size: 0.8em;
+      line-height: 2em; }
+    footer .col-1 .faq-button {
+      background-color: #333;
+      font-size: 0.9em;
+      color: white;
+      border: 1 solid;
+      border-color: white;
+      border-radius: 4px;
+      text-align: center;
+      padding: 12px 66px;
+      margin: 20px 0px;
+      letter-spacing: 2px;
+      cursor: pointer; }
+    footer .col-1 .faq-button:hover {
+      background-color: #e94739; }
+    footer .col-1 input[type="text"] {
+      margin-right: 5px;
+      padding: 4px; }
+    footer .col-1 .newsletter {
+      margin: 20px 0px; }
+    footer .col-1 .newsletter-button {
+      background-color: #333;
+      font-size: 0.7em;
+      color: white;
+      border: 1 solid;
+      border-color: white;
+      text-align: center;
+      padding: 4px 8px;
+      letter-spacing: 2px;
+      cursor: pointer; }
+  footer .social-icons {
+    display: flex;
+    margin: 0px 0px 20px 0px; }
+  footer i {
+    font-size: 1.5em;
+    font-style: normal;
+    font-family: icons;
+    margin-right: 15px; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: arial;
+  margin: 0; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 400px; }
+  .intro h2 {
+    text-align: center;
+    color: black; }
+
+.intro-text-container {
+  display: flex;
+  justify-content: center; }
+  .intro-text-container p {
+    max-width: 350px;
+    text-align: center;
+    color: black;
+    line-height: 1.6em; }
+
+.front-image {
+  color: white;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative; }
+  .front-image .front-image-text-container {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .front-image .front-image-text-container h2 {
+      text-align: center; }
+    .front-image .front-image-text-container p {
+      color: white;
+      text-align: center; }
+    .front-image .front-image-text-container .front-image-button-container {
+      display: flex;
+      justify-content: center; }
+      .front-image .front-image-text-container .front-image-button-container button {
+        margin-top: 20px;
+        color: white;
+        background-color: #e94739;
+        border: none;
+        border-radius: 4px;
+        text-align: center;
+        padding: 8px 24px;
+        letter-spacing: 2px;
+        cursor: pointer; }
+      .front-image .front-image-text-container .front-image-button-container button:hover {
+        background-color: #196089; }
+  .front-image img {
+    min-width: 100%;
+    min-height: 400px;
+    height: auto; }

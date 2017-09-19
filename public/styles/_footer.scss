@@ -1,0 +1,70 @@
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: $grey;
+  padding: 40px 20px;
+  width: 100%;
+
+  .col-1 {
+    color: rgb(255, 255, 255);
+    width: calc(100%/3);
+    max-width: 400px;
+    padding: 7px;
+
+    p {
+      font-size: 0.8em;
+      line-height: 2em;
+    }
+
+    .faq-button {
+      background-color: $grey;
+      font-size: 0.9em;
+      color: white;
+      border: 1 solid;
+      border-color: white;
+      border-radius: 4px;
+      text-align: center;
+      padding: 12px 66px;
+      margin: 20px 0px;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+
+    .faq-button:hover {
+      background-color: $red;
+    }
+
+    input[type="text"] {
+      margin-right: 5px;
+      padding: 4px;
+    }
+
+    .newsletter {
+      margin: 20px 0px;
+    }
+
+    .newsletter-button {
+      background-color: $grey;
+      font-size: 0.7em;
+      color: white;
+      border: 1 solid;
+      border-color: white;
+      text-align: center;
+      padding: 4px 8px;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    margin: 0px 0px 20px 0px;
+  }
+
+  i {
+    font-size: 1.5em;
+    font-style: normal;
+    font-family: icons;
+    margin-right: 15px;
+  }
+}

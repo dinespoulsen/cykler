@@ -1,0 +1,109 @@
+@font-face {
+    font-family: icons;
+    src: url(../fonts/ElegantIcons.woff);
+}
+
+@import "variables";
+@import "imgCarousel";
+@import "header";
+@import "footer";
+
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+
+    h2 {
+      text-align: center;
+      color: black;
+    }
+}
+
+.intro-text-container {
+  display: flex;
+  justify-content: center;
+
+  p {
+    max-width: 350px;
+    text-align: center;
+    color: black;
+    line-height: 1.6em;
+  }
+}
+
+.front-image {
+  color: white;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+
+  .front-image-text-container {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      color: white;
+      text-align: center;
+    }
+
+  .front-image-button-container {
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin-top: 20px;
+      color: white;
+      background-color: $red;
+      border: none;
+      border-radius: 4px;
+      text-align: center;
+      padding: 8px 24px;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #196089;
+    }
+  }
+
+  }
+
+  img {
+    min-width: 100%;
+    min-height: 400px;
+    height: auto;
+  }
+}
